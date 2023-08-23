@@ -38,7 +38,7 @@ function LeftPanel({
   handleJobDescription,
 }) {
   return (
-    <div className="h-full w-1/2 bg-slate-200 rounded-sm flex flex-col justify-start items-center">
+    <div className="h-full w-1/2 bg-slate-50 rounded-sm flex flex-col justify-start pt-16 space-y-4 items-center">
       <GeneralCard
         firstName={firstName}
         handleFirstName={handleFirstName}
