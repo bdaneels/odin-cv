@@ -16,6 +16,11 @@ function App() {
   const [institution, setInstitution] = useState("");
   const [edPlace, setEdPlace] = useState("");
   const [edTime, setEdTime] = useState("");
+  const [jobTitle, setJobTitle] = useState("");
+  const [employerName, setEmployerName] = useState("");
+  const [jobPlace, setJobPlace] = useState("");
+  const [jobTime, setJobTime] = useState("");
+  const [jobDescription, setJobDescription] = useState("");
 
   return (
     <div className="flex flex-col bg-slate-500 h-screen w-screen justify-start">
@@ -44,6 +49,16 @@ function App() {
           handleEdPlace={setEdPlace}
           edTime={edTime}
           handleEdTime={setEdTime}
+          jobTitle={jobTitle}
+          handleJobTitle={setJobTitle}
+          employerName={employerName}
+          handleEmployerName={setEmployerName}
+          jobPlace={jobPlace}
+          handleJobPlace={setJobPlace}
+          jobTime={jobTime}
+          handleJobTime={setJobTime}
+          jobDescription={jobDescription}
+          handleJobDescription={setJobDescription}
         />
         <RightPanel
           firstName={firstName}
@@ -57,6 +72,11 @@ function App() {
           edPlace={edPlace}
           institution={institution}
           edTime={edTime}
+          jobTitle={jobTitle}
+          employerName={employerName}
+          jobPlace={jobPlace}
+          jobTime={jobTime}
+          jobDescription={jobDescription}
         />
       </div>
     </div>

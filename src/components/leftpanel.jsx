@@ -26,6 +26,16 @@ function LeftPanel({
   handleEdPlace,
   edTime,
   handleEdTime,
+  jobTitle,
+  handleJobTitle,
+  employerName,
+  handleEmployerName,
+  jobPlace,
+  handleJobPlace,
+  jobTime,
+  handleJobTime,
+  jobDescription,
+  handleJobDescription,
 }) {
   return (
     <div className="h-full w-1/2 bg-slate-200 rounded-sm flex flex-col justify-start items-center">
@@ -55,7 +65,18 @@ function LeftPanel({
         edTime={edTime}
         handleEdTime={handleEdTime}
       />
-      <WorkCard />
+      <WorkCard
+        jobTitle={jobTitle}
+        handleJobTitle={handleJobTitle}
+        employerName={employerName}
+        handleEmployerName={handleEmployerName}
+        jobPlace={jobPlace}
+        handleJobPlace={handleJobPlace}
+        jobTime={jobTime}
+        handleJobTime={handleJobTime}
+        jobDescription={jobDescription}
+        handleJobDescription={handleJobDescription}
+      />
     </div>
   );
 }

@@ -15,6 +15,11 @@ export default function RightPanel({
   edPlace,
   edTime,
   institution,
+  jobTitle,
+  employerName,
+  jobPlace,
+  jobTime,
+  jobDescription,
 }) {
   return (
     <div className="w-1/2 h-full bg-white">
@@ -34,7 +39,14 @@ export default function RightPanel({
             institution={institution}
             edTime={edTime}
           />
-          <CVPage profDescription={profDescription} />
+          <CVPage
+            profDescription={profDescription}
+            jobTitle={jobTitle}
+            employerName={employerName}
+            jobPlace={jobPlace}
+            jobTime={jobTime}
+            jobDescription={jobDescription}
+          />
         </div>
       </div>
     </div>
