@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="flex flex-col bg-slate-500 h-screen w-screen justify-start">
       <Header />
-      <div className="flex w-full h-full">
+      <div className="flex w-full">
         <LeftPanel
           firstName={firstName}
           handleFirstName={setFirstName}

@@ -22,8 +22,8 @@ export default function RightPanel({
   jobDescription,
 }) {
   return (
-    <div className="w-1/2 h-full bg-white">
-      <div className=" m-10 h-[800px] w-[600px] sticky shadow-lg">
+    <div className="w-1/2 bg-white">
+      <div className=" m-10 h-[800px] w-[600px] sticky top-10 shadow-lg">
         <CVHeader
           firstName={firstName}
           lastName={lastName}
